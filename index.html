@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="sources/logo4.jpg" alt="logo" class="logo">
+                <ul id="mainMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="cross" onclick="CloseMenu()" class="fa-solid fa-xmark"></i>
+                </ul>
+                <i id="hamburger" onclick="OpenMenu()" class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="Intro">
+                <p>Java Full Stack Developer</p>
+                <h1>Hi I'm <span>Anirudha </span><br> <span> Warkad</span> from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-matter">
+                    <h1 class="sub-heading">About Me</h1>
+                    <p>Full Stack Developer with one year of dedicated practice, demonstrating a keen aptitude for learning
+                        and mastering various programming skills. Recognized for adept problem-solving abilities and a passion
+                        for tackling complex challenges that others may find daunting. Proactively aware of personal potential
+                        and committed to continuous growth in the field of programming.</p>
+                </div>
+                <div class="about-right">
+                    <div class="about-menu">
+                        <h3 name="skills" class="about-link active-about" onclick="showInfo(event)">Skills</h3>
+                        <h3 name="experience" class="about-link" onclick="showInfo(event)">Experience</h3>
+                        <h3 name="education" class="about-link" onclick="showInfo(event)">Education</h3>
+                    </div>
+                    <ul id="skills" class="about-menu-matter about-menu-matter-active">
+                        <li><span>Web Development</span><br>Designing Web Applications</li>
+                        <li><span>Frontend Developer</span><br>Designing Web-based Apllication using Html,css & jscript</li>
+                        <li><span>Backend Developer</span><br>Generate required response to the end user,which is 
+                            displayed by the Front-End.</li>
+                    </ul>
+                    <ul id="experience" class="about-menu-matter">
+                        <li><span>June 2023-December 2024</span><br> Intership in Full Stack Developer at NLT Infotech </li>
+                        <li><span>2024-Present</span><br>Building Practice Projects</li>
+                        <li><span>2024-Present</span><br> One month Virtual Internship with CodeAlpha as Java Developer</li>
+                    </ul>
+                    <ul id="education" class="about-menu-matter">
+                        <li><span>2021-2023</span><br> Bachelor of Engineering at Rajiv Gandhi College Of Engineering And Research From (RTMNU)</li>
+                        <li><span>2017-2020</span><br>Diploma in Computer Tecnology at Priyadarshini Polytechnic Nagpur </li>
+                        <li><span>2015-2017</span><br> 12th at Major Hemant Jakate </li>
+                        <li><span>2015</span><br> 10th at Indira Gandhi High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-heading">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I can Develop websites based on your requirements. I can do fullstack web development and make responsive and fully functional web applications.</p>
+                    <a>Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>I can create websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app</p>
+                    <a>Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Developer</h2>
+                    <p>I can used to build and maintain the mechanisms that process data and perform actions on websites.</p>
+                    <a>Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-heading">My Web-based Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="sources/work54.jpg">
+                    <div class="layer">
+                        <h3>AADHAR APPLICATION CLON </h3>
+                        <p>This application is powered by Chat-GPT 3.5 turbo which gives responses to our questions.</p>
+                        <a href="https://github.com/Anirudhawarkad/AadharApp" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="sources/work40.jpg">
+                    <div class="layer">
+                        <h3>QUIZ APPLICATION</h3>
+                        <p>In this project i have build a simple Online Quiz Platform by using the java OPPS concept.</p>
+                        <a href="https://github.com/Anirudhawarkad/CodeAlpha-Task2-Quiz-Application" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="sources/work89.jpg">
+                    <div class="layer">
+                        <h3>HOTEL RESERVATION SYSTEM</h3>
+                        <p>This Hotel Reservation system where users can search for available rooms, make reservations, and view booking details. Include features like room categorization and payment processing.</p>
+                        <a href="https://github.com/Anirudhawarkad/CodeAlpha-Task4-Hotel-Reservation-Application" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="sources/work45.jpg">
+                    <div class="layer">
+                        <h3>STUDENT GRADE TRACKER</h3>
+                        <p>Students Grade Tracker This project calculates the grade of a student based on the marks entered by user in each subject. Program prints the grade based on this logic. </p>
+                        <a href="https://github.com/Anirudhawarkad/Code-Alpha-Task1-Student-Grade-Tracker" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Anirudhawarkad" target="_blank" class="see-more-btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-heading">Contact</h1>
+            <div class="sub-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:anirudhwarkad.17@gmail.com">anirudhwarkad.17@gmail.com</a>
+            </div>
+            <div class="sub-contact">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+917038067648">+917038067648</a>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/Anirudhawarkad" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/anirudha-warkad-a062a2241" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                
+            </div>
+            <a class="downloadCv" href="sources/ANIRUDHA WARKAD  CV.pdf" download>Download CV</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
